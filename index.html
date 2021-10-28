@@ -6,198 +6,325 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paytons Portfolio</title>
+    <!--  -->
+
+    <!--  -->
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <!-- -------------------------------------------------- -->
 
-<body class="body">
 
-    <!-- -------------------------------------------------- -->
 
-    <header class="header bg-image4 ">
-        <div class="navbar flex justify-content-between bg-6">
-            <div class="navbar-logo flex align-items-center">
-                <a class="payton-logo" href="" class="home-link">PAYTON MACDONALD</a>
+
+
+
+
+<body class="body DEV-BG">
+
+
+
+
+
+    <!--  -->
+    <header>
+        <div class="navbar-section">
+            <!-- desktop -->
+            <div class="desktop-only">
+                <div class="navbar_desktop container-fluid bg-6">
+                    <div class="row align-items-center">
+                        <div class="col d-flex justify-content-center justify-content-sm-start align-items-center">
+                            <a class="payton-logo home-link">PAYTON MACDONALD</a>
+                        </div>
+                        <div class="col d-flex justify-content-end align-items-center">
+                            <ul class="navbar-pages_list">
+                                <li class="navbar-pages_item">
+                                    <a class="navbar-pages_link" href="#about">about</a>
+                                </li>
+                                <li class="navbar-pages_item">
+                                    <a class="navbar-pages_link" href="#skills">skills</a>
+                                </li>
+                                <li class="navbar-pages_item">
+                                    <a class="navbar-pages_link" href="#portfolio">portfolio</a>
+                                </li>
+                                <li class="navbar-pages_item">
+                                    <a class="navbar-pages_link" href="#contact">contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="navbar-pages flex justify-content-end">
-                <ul class="navbar-pages_list flex">
-                    <li class="navbar-pages_item">
-                        <a class="navbar-pages_link" href="#about">about</a>
-                    </li>
-                    <li class="navbar-pages_item">
-                        <a class="navbar-pages_link" href="#skills">skills</a>
-                    </li>
-                    <li class="navbar-pages_item">
-                        <a class="navbar-pages_link" href="#portfolio">portfolio</a>
-                    </li>
-                    <li class="navbar-pages_item">
-                        <a class="navbar-pages_link" href="#contact">contact</a>
-                    </li>
-                </ul>
+            <!-- mobile -->
+            <div class="mobile-only">
+                <div class="container-fluid bg-6">
+                    <div class="row align-items-center p-2">
+                        <div class="col d-flex justify-content-center justify-content-sm-start align-items-center">
+                            <a class="payton-logo home-link">PAYTON MACDONALD</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="header-fold text-white flex flex-direction-column align-items-center justify-content-center">
-            <div class="header-fold_title">
-                <h1 class="header-fold_h1">Full Stack Developer</h1>
+        <div class="header-fold">
+            <!-- desktop -->
+            <div class="desktop-only">
+                <div
+                    class="header-fold_desktop container-fluid bg-image4 d-flex justify-content-center align-items-center">
+                    <div class="row flex-column justify-content-center align-items-center">
+                        <div class="col header-fold_title d-flex justify-content-center align-items-center">
+                            <h1 class="header-fold_h1">Full Stack Developer</h1>
+                        </div>
+                        <div class="col header-fold_subtitle d-flex justify-content-center align-items-center">
+                            <p class="header-fold_p">Graphic Designer, and Search Engine Optimizer</p>
+                        </div>
+                        <div class="col header-fold_cta d-flex justify-content-center align-items-center">
+                            <a class="header-fold_button" href="#about">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="header-fold_subtitle">
-                <p class="header-fold_p">Graphic Designer, and Search Engine Optimizer</p>
-            </div>
-            <div class="header-fold_cta">
-                <a class="header-fold_button" href="#about">LEARN MORE</a>
+            <!-- mobile -->
+            <div class="mobile-only">
+                <div class="header-fold_desktop container-fluid bg-image4">
+                    <div class="row mb-5">
+                        <div class="col d-flex justify-content-end">
+                            <div class="dropdown">
+                                <button class="navbar-pages_mobile-button" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown">Quick Nav</button>
+                                <div class="dropdown-menu dropdown-menu-right bg-6"
+                                    aria-labelledby="dropdownMenuButton">
+                                    <a class="navbar-pages_link" href="#about2">about</a>
+                                    <a class="navbar-pages_link" href="#skills2">skills</a>
+                                    <a class="navbar-pages_link" href="#portfolio2">portfolio</a>
+                                    <a class="navbar-pages_link" href="#contact">contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row flex-column">
+                        <div class="col header-fold_title d-flex justify-content-center">
+                            <h1 class="header-fold_h1">Full Stack Developer</h1>
+                        </div>
+                        <div class="col header-fold_subtitle d-flex justify-content-center">
+                            <p class="header-fold_p">Graphic Designer, and Search Engine Optimizer</p>
+                        </div>
+                        <div class="col header-fold_cta d-flex justify-content-center">
+                            <a class="header-fold_button" href="#about2">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
+    <!--  -->
 
-    <!-- -------------------------------------------------- -->
-
-    <main class="main">
+    <!--  -->
+    <main>
         <!-- ABOUT -->
-        <div class="about-section bg-6 flex flex-direction-column justify-content-center" id="about">
-            <div class="about-section_header flex justify-content-center">
-                <h2 class="about-section_h2">About Payton</h2>
+        <!-- desktop -->
+        <div class="desktop-only">
+            <div class="about-section bg-6 container-fluid py-5" id="about">
+                <div class="row mt-5">
+                    <div class="col d-flex justify-content-center">
+                        <h2 class="about-section_h2">About Payton</h2>
+                    </div>
+                </div>
+                <div class="row mb-5 justify-content-center">
+                    <div class="col-9">
+                        <p class="about-section_p">
+                            Payton R Macdonald is a creative thinker who is a full-stack jack-of-all-trades. He learns
+                            for a
+                            living
+                            and continues to make clean, polished, and optimized websites and applications.
+                        </p>
+                        <p class="about-section_p">
+                            He started as a freelance graphic designer that graduated with a bachelor’s degree at
+                            Brigham
+                            Young
+                            University, majoring in Communications: Advertising. After a social media internship and
+                            a job
+                            as a
+                            Marketing Assistant he found a passion for web development and became a Full-stack
+                            Developer at
+                            Boise
+                            CodeWorks Coding Bootcamp.
+                        </p>
+                        <p class="about-section_p">
+                            Now with digital marketing and SEO experience mixed with an aptitude for tech and code,
+                            Payton
+                            aims to invent the next best user experience and design products a perfectionist would be
+                            proud of.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <p class="about-section_p">
-                Payton R Macdonald is a creative thinker who is a full-stack jack-of-all-trades. He learns for a
-                living
-                and continues to make clean, polished, and optimized websites and applications.
-            </p>
-            <div class="about-section_body">
-                <p class="about-section_p"><b>
-                        He started as a freelance graphic designer that graduated with a bachelor’s degree at Brigham
-                        Young
-                        University, majoring in Communications: Advertising. After a social media internship and a job
-                        as a
-                        Marketing Assistant he found a passion for web development and became a Full-stack Developer at
-                        Boise
-                        CodeWorks Coding Bootcamp.
-                    </b></p>
-                <p class="about-section_p">
-                    Now with digital marketing and SEO experience mixed with an aptitude for tech and code, Payton
-                    aims to invent the next best user experience and design products a perfectionist would be
-                    proud of.
-                </p>
+        </div>
+        <!-- mobile -->
+        <div class="mobile-only">
+            <div class="about-section bg-6 container-fluid py-5" id="about2">
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <h2 class="about-section_h2">About Payton</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-11">
+                        <p class="about-section_p">
+                            Payton R Macdonald is a creative thinker who is a full-stack jack-of-all-trades. He learns
+                            for a
+                            living
+                            and continues to make clean, polished, and optimized websites and applications.
+                        </p>
+                        <p class="about-section_p">
+                            He started as a freelance graphic designer that graduated with a bachelor’s degree at
+                            Brigham
+                            Young
+                            University, majoring in Communications: Advertising. After a social media internship and
+                            a job
+                            as a
+                            Marketing Assistant he found a passion for web development and became a Full-stack
+                            Developer at
+                            Boise
+                            CodeWorks Coding Bootcamp.
+                        </p>
+                        <p class="about-section_p">
+                            Now with digital marketing and SEO experience mixed with an aptitude for tech and code,
+                            Payton
+                            aims to invent the next best user experience and design products a perfectionist would be
+                            proud of.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- SKILLS -->
-        <div class="skill-section bg-image3" id="skills">
-            <div class="skill-section_header flex justify-content-center">
-                <h2 class="skill-section_h2">Web Dev Skillset</h2>
-            </div>
-            <div class="skill-section_body flex justify-content-around">
-                <img class="skill-section_image" src="assets/html-logo.png" title="html5" alt="">
-                <img class="skill-section_image" src="assets/css-logo.png" title="CSS" alt="">
-                <img class="skill-section_image" src="assets/JS-logo.png" title="JavaScript" alt="">
-                <img class="skill-section_image" src="assets/python-logo.png" title="Python" alt="">
-                <img class="skill-section_image" src="assets/vue-logo.png" title="Vue.js" alt="">
-                <img class="skill-section_image" src="assets/angular-logo.png" title="Angular" alt="">
-                <img class="skill-section_image" src="assets/react-logo.png" title="React" alt="">
-                <img class="skill-section_image" src="assets/wordpress-logo.png" title="Wordpress" alt="">
-            </div>
-            <div class="skill-section_body2 flex justify-content-around">
-                <img class="skill-section_image" src="assets/mysql-logo.png" title="MySQL" alt="">
-                <img class="skill-section_image" src="assets/mongodb-logo.png" title="MongoDB" alt="">
-                <img class="skill-section_image" src="assets/nodedotjs-logo.png" title="Node.js" alt="">
-                <img class="skill-section_image" src="assets/csharp-logo.png" title="C#" alt="">
-                <img class="skill-section_image" src="assets/bootstrap-logo.png" title="Bootstrap5" alt="">
-                <img class="skill-section_image" src="assets/photoshop-logo.png" title="Adobe Photoshop" alt="">
-                <img class="skill-section_image" src="assets/illustrator-logo.png" title="Adobe Illustrator" alt="">
-                <img class="skill-section_image" src="assets/inDesign-logo.png" title="Adobe InDesign" alt="">
-            </div>
-        </div>
-        <!-- --------------------------------- -->
-        <!-- PORTFOLIO -->
-        <div class="portfolio-section bg-6" id="portfolio">
-            <div class="portfolio-section_header flex justify-content-center">
-                <h2 class="portfolio-section_h2">Most Recent Work</h2>
-            </div>
-            <div class="portfolio-section_card flex">
-                <div class="">
-                    <img class="portfolio-section_card-image" src="assets/BugTrackerLogo.png" alt="">
+        <!-- desktop -->
+        <div class="desktop-only" id="skills">
+            <div class="skill-section container-fluid bg-image3 py-5">
+                <div class="skill-section_header row">
+                    <div class="col d-flex justify-content-center">
+                        <h2 class="skill-section_h2">Full Stack Skillset</h2>
+                    </div>
                 </div>
-                <div class="">
-                    <h3 class="portfolio-section_h3">BugTracker</h3>
-                    <p>Application that allows users to view bugs created by other users. Bugs have a details page and
-                        can be closed or commented on.
-                    </p>
-                    <p>
-                        <b>Uses: VUE.js, Node.js, JavaScript, CSS, Bootstrap</b>
-                    </p>
-                    <br>
-                    <button class="portfolio-section_button-left"
-                        onClick="window.open('https://bug-tracker-log.herokuapp.com/#/');">VIEW
-                        APPLICATION
-                    </button>
-                    <!-- <button class="portfolio-section_button-right">
-                        READ MORE
-                    </button> -->
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <img class="skill-section_image" src="assets/html-logo.png" title="html5" alt="">
+                        <img class="skill-section_image" src="assets/css-logo.png" title="CSS" alt="">
+                        <img class="skill-section_image" src="assets/JS-logo.png" title="JavaScript" alt="">
+                        <img class="skill-section_image" src="assets/python-logo.png" title="Python" alt="">
+                        <img class="skill-section_image" src="assets/vue-logo.png" title="Vue.js" alt="">
+                        <img class="skill-section_image" src="assets/angular-logo.png" title="Angular" alt="">
+                        <img class="skill-section_image" src="assets/react-logo.png" title="React" alt="">
+                        <img class="skill-section_image" src="assets/wordpress-logo.png" title="Wordpress" alt="">
+                    </div>
                 </div>
-            </div>
-            <!--  -->
-            <div class="portfolio-section_card flex">
-                <div class="">
-                    <img class="portfolio-section_card-image" src="assets/EvilDoerLogo.png" alt="">
-                </div>
-                <div class="">
-                    <h3 class="portfolio-section_h3">EvilDoer</h3>
-                    <p>
-                        Full Stack Application. Allows users to create board pages, lists for each board, tasks on each
-                        list, and comments on each task.
-                    </p>
-                    <p>
-                        <b>Uses: VUE.js, Node.js, JavaScript, CSS, Bootstrap</b>
-                    </p>
-                    <br>
-                    <button class="portfolio-section_button-left"
-                        onClick="window.open('https://evil-doer-kanban.herokuapp.com/#/');">VIEW
-                        APPLICATION
-                    </button>
-                    <!-- <button class="portfolio-section_button-right">
-                        READ MORE
-                    </button> -->
-                </div>
-            </div>
-            <!--  -->
-            <div class="portfolio-section_card flex">
-                <div class="">
-                    <img class="portfolio-section_card-image" src="assets/MoneyFitLogo.png" alt="">
-                </div>
-                <div class="">
-                    <h3 class="portfolio-section_h3">MoneyFit Website</h3>
-                    <p>
-                        Developed and maintained website of Money Fit by DRS from 2019-2021. Polished branding and
-                        updated over 100+ pages.
-                    </p>
-                    <p>
-                        <b>Uses: SquareSpace, HTML, CSS, SEO Strategies</b>
-                    </p>
-                    <br>
-                    <button class="portfolio-section_button-left" onClick="window.open('https://moneyfit.org/');">
-                        VIEW WEBSITE
-                    </button>
-                    <!-- <button class="portfolio-section_button-right">
-                        READ MORE
-                    </button> -->
+                <div class="row mb-5">
+                    <div class="col d-flex justify-content-center">
+                        <img class="skill-section_image" src="assets/mysql-logo.png" title="MySQL" alt="">
+                        <img class="skill-section_image" src="assets/mongodb-logo.png" title="MongoDB" alt="">
+                        <img class="skill-section_image" src="assets/nodedotjs-logo.png" title="Node.js" alt="">
+                        <img class="skill-section_image" src="assets/csharp-logo.png" title="C#" alt="">
+                        <img class="skill-section_image" src="assets/bootstrap-logo.png" title="Bootstrap5" alt="">
+                        <img class="skill-section_image" src="assets/photoshop-logo.png" title="Adobe Photoshop" alt="">
+                        <img class="skill-section_image" src="assets/illustrator-logo.png" title="Adobe Illustrator"
+                            alt="">
+                        <img class="skill-section_image" src="assets/inDesign-logo.png" title="Adobe InDesign" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- --------------------------------- -->
+        <!-- mobile -->
+        <div class="mobile-only">
+            <div class="skill-section container-fluid bg-image3 py-5" id="skills2">
+                <div class="skill-section_header row">
+                    <div class="col d-flex justify-content-center">
+                        <h2 class="skill-section_h2">Full Stack Skillset</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <img class="skill-section_image" src="assets/html-logo.png" title="html5" alt="">
+                        <img class="skill-section_image" src="assets/css-logo.png" title="CSS" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <img class="skill-section_image" src="assets/JS-logo.png" title="JavaScript" alt="">
+                        <img class="skill-section_image" src="assets/python-logo.png" title="Python" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <img class="skill-section_image" src="assets/vue-logo.png" title="Vue.js" alt="">
+                        <img class="skill-section_image" src="assets/angular-logo.png" title="Angular" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <img class="skill-section_image" src="assets/react-logo.png" title="React" alt="">
+                        <img class="skill-section_image" src="assets/wordpress-logo.png" title="Wordpress" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <img class="skill-section_image" src="assets/mysql-logo.png" title="MySQL" alt="">
+                        <img class="skill-section_image" src="assets/mongodb-logo.png" title="MongoDB" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <img class="skill-section_image" src="assets/nodedotjs-logo.png" title="Node.js" alt="">
+                        <img class="skill-section_image" src="assets/csharp-logo.png" title="C#" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <img class="skill-section_image" src="assets/bootstrap-logo.png" title="Bootstrap5" alt="">
+                        <img class="skill-section_image" src="assets/photoshop-logo.png" title="Adobe Photoshop" alt="">
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col d-flex justify-content-center">
+                        <img class="skill-section_image" src="assets/illustrator-logo.png" title="Adobe Illustrator"
+                            alt="">
+                        <img class="skill-section_image" src="assets/inDesign-logo.png" title="Adobe InDesign" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- desktop -->
+        <div class="container-fluid portfolio-section bg-6" id="portfolio">
+            <div class="row">
+                <div class="col">
+                    <div class="container">
+                        <div class="row portfolio-section_card">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile -->
     </main>
+    <!--  -->
 
-    <!-- -------------------------------------------------- -->
 
-    <footer class="footer">
-        <!-- CONTACT -->
+
+
+    <!--  -->
+    <footer>
         <div class="contact-section bg-image3" id="contact">
-            <div class="contact-section_header flex justify-content-center">
+            <div class="contact-section_header d-flex justify-content-center">
                 <h2 class="contact-section_h2">Contact Payton</h2>
             </div>
-            <div class="contact-section_body1 flex flex-direction-column align-items-center">
+            <div class="contact-section_body1 d-flex flex-column align-items-center">
                 <p class="contact-section_email">paytonmac49@gmail.com</p>
                 <p class="contact-section_phone">(208) 800-9821</p>
             </div>
-            <div class="contact-section_body2 flex flex-direction-row justify-content-center">
+            <div class="contact-section_body2 d-flex flex-row justify-content-center">
                 <button class="contact-section_button-left"
                     onClick="window.open('https://drive.google.com/file/d/1WJCM3MFBoiJ1ATyJSrnbZoCZGGi9fu-j/view?usp=sharing');">RESUME</button>
                 <button class="contact-section_button-right"
@@ -206,6 +333,7 @@
 
         </div>
     </footer>
+    <!--  -->
 
     <!-- -------------------------------------------------- -->
 
@@ -213,6 +341,15 @@
 
 <!-- -------------------------------------------------- -->
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 <script src="app.js"></script>
 
 </html>
